@@ -1,19 +1,29 @@
 {
   "name": "video-server",
   "version": "1.0.0",
-  "description": "A video server application",
+  "description": "A video server application using MediaSoup and Socket.IO for real-time video streaming",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "node --watch index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "video",
-    "server"
+    "streaming",
+    "mediasoup",
+    "socket.io",
+    "webrtc"
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4",
+    "mediasoup": "^3.13.0",
+    "cors": "^2.8.5",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
